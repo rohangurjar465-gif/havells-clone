@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<title>Navbar</title>
+
+<style>
+.nav-link:hover{
+    color:red !important;
+
+}
+.category{
+    cursor:pointer;
+}
+.category {
+    transition: color 0.4s delay  ease;
+
+}
+
+.category:hover{
+    color:rgb(193, 35, 35);
+}
+/* footer a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+} */
+
+footer a:hover{
+  transition: color 0.3s ease-in ;
+    color: red !important;
+}
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light shadow-lg fixed-top">
+
+<div class="container">
+
+    <!-- Offcanvas Button -->
+    <button class="btn me-4"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sideMenu">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+        <img src="Havells_Logo.svg"
+             width="100"
+             height="50"
+             alt="logo">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#">
+                    Home
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Products
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Services
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"
+                   href="#"
+                   data-bs-toggle="dropdown">
+
+                    Categories
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Fans</a></li>
+                    <li><a class="dropdown-item" href="#">Lights</a></li>
+                    <li><a class="dropdown-item" href="#">AC</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <!-- Search -->
+        <form class="d-flex ms-lg-3">
+            <input class="form-control me-2"
+                   type="search"
+                   placeholder="Search">
+
+            <button class="btn btn-danger"
+                    type="submit">
+                Search
+            </button>
+        </form>
+
+    </div>
+
+</div>
+
+</nav>
+
+<!-- Offcanvas -->
+<div class="offcanvas offcanvas-start"
+     tabindex="-1"
+     id="sideMenu">
+
+    <div class="offcanvas-header">
+
+        <h5 class="offcanvas-title">
+            Havells Menu
+        </h5>
+
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <ul class="list-group">
+
+            <li class="list-group-item">
+                Home
+            </li>
+
+            <li class="list-group-item">
+                Products
+            </li>
+
+            <li class="list-group-item">
+                Services
+            </li>
+
+            <li class="list-group-item">
+                Contact
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+<!-- carsoul img -->
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://havells.com/media/wysiwyg/Stunnair_Split_AC_11.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://havells.com/media/wysiwyg/Stunnair_Split_AC_New_3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://havells.com/media/wysiwyg/Stunnair_Split_AC_31.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container-fluid">
+  <!-- Your content here -->
+   <div class="row">
+     <div class="col-12">
+       <!-- Content for the first column -->
+        <h3 class="text-center my-4">Discover Our Brands</h3>
+
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-md-3 col-6">
+         <div class="card mb-4">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/s/t/stunnair_base_2.jpg" class="card-img-top" alt="Havells">
+            <div class="card-body">
+              <h5 class="card-title">Havells</h5>
+              <p class="card-text">Explore our wide range of electrical products under the Havells brand.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+         </div>
+     </div>
+        <div class="col-md-3 col-6">
+             <div class="card mb-4">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/g/l/gls12v5gsnmr_-_gls18v5asnmr_base.jpg" class="card-img-top" alt="Havells">
+            <div class="card-body">
+              <h5 class="card-title">Havells</h5>
+              <p class="card-text">Explore our wide range of electrical products under the Havells brand.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+         </div>
+        </div>
+        <div class="col-md-3 col-6">
+             <div class="card mb-4">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/s/t/stylus_marble_4_.jpg" class="card-img-top" alt="Havells">
+            <div class="card-body">
+              <h5 class="card-title">Havells</h5>
+              <p class="card-text">Explore our wide range of electrical products under the Havells brand.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+         </div>
+        </div>
+         <div class="col-md-3 col-6">
+             <div class="card mb-4">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/s/t/stellar_duo_split_ac_5_star_2__1.jpg" class="card-img-top" alt="Havells">
+            <div class="card-body">
+              <h5 class="card-title">Havells</h5>
+              <p class="card-text">Explore our wide range of electrical products under the Havells brand.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+         </div>
+        </div>
+         <div class="col-md-3 col-6">
+             <div class="card mb-4">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/s/t/stellar_base_image_1_1.jpg" class="card-img-top" alt="Havells">
+            <div class="card-body">
+              <h5 class="card-title">Havells</h5>
+              <p class="card-text">Explore our wide range of electrical products under the Havells brand.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+         </div>
+        </div>
+         <div class="col-md-3 col-6">
+             <div class="card mb-4">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/g/l/gls18v5fwmgt_base_image_1.jpg" class="card-img-top" alt="Havells">
+            <div class="card-body">
+              <h5 class="card-title">Havells</h5>
+              <p class="card-text">Explore our wide range of electrical products under the Havells brand.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+         </div>
+        </div>
+         <div class="col-md-3 col-6">
+             <div class="card mb-4">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/b/l/bliss_b_2_1.jpg" class="card-img-top" alt="Havells">
+            <div class="card-body">
+              <h5 class="card-title">Havells</h5>
+              <p class="card-text">Explore our wide range of electrical products under the Havells brand.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+         </div>
+        </div>
+         <div class="col-md-3 col-6">
+             <div class="card mb-4">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/s/a/sapphire_5_star.jpg" class="card-img-top" alt="Havells">
+            <div class="card-body">
+              <h5 class="card-title">Havells</h5>
+              <p class="card-text">Explore our wide range of electrical products under the Havells brand.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+         </div>
+        </div>
+        <div class="row">
+          <div class="col-12 justify-content-center">
+      <h3 class="ms-5 font-weight-bolder ">This Weeks Highlights</h3>
+   
+        </div>
+      
+     </div>
+       <div class="row">
+         <div class=" col-lg-12 col-md-12  d-flex gap-4 flex-wrap my-3  ms-4" style="cursor:pointer;">
+
+    <p class="m-0 category">Trending</p>
+    <p class="m-0 category">Fan</p>
+    <p class="m-0 category">Water Heater</p>
+    <p class="m-0 category">Chimney Hob & Cooktop</p>
+    <p class="m-0 category">Personal Grooming</p>
+    <p class="m-0 category">Appliances</p>
+
+</div>
+    
+     </div>
+     <div class="col-12 col-lg-6 col-md-12">
+       <img src="https://havells.com/media/catalog/product//e/p/epic_pro_bldc_ceiling_fan.jpg" alt="fan" class="img-fluid rounded">
+     </div>
+     <div class="col-12 col-lg-3 col-md-6">
+      <img src="https://havells.com/media/catalog/product//a/p/ap-250-desktop-highlight.jpg" alt="desktop" class="img-fluid rounded">
+      <img src="https://havells.com/media/catalog/product//6/0/600x600_graciawp_v1.jpg" alt="gracia" class="img-fluid mt-3 rounded "style="height:auto; width:100%;">
+     </div>
+     
+      <div class="col-12 col-lg-3 col-md-6 ">
+      <img src="https://havells.com/media/catalog/product//a/p/ap-250-desktop-highlight.jpg" alt="desktop" class="img-fluid rounded">
+      <img src="https://havells.com/media/catalog/product//6/0/600x600_graciawp_v1.jpg" alt="gracia" class="img-fluid mt-3 rounded"style="height:auto; width:100%;">
+     </div>
+     <h3 class="mt-4 text-center font-weight-boloder bg-danger ">Latest from Havells</h3>
+     <div class="row">
+      <div class="col-12 mt-4">
+        <img src="https://havells.com/media/wysiwyg/Stunnair_Split_AC_22.jpg" alt="latest" class="img-fluid rounded" style="width:100%; height:450px;">
+      </div>
+      <!-- footer -->
+       
+     </div>
+     <div class="row justify-content-evenly">
+     <div class="col-2  mt-4 ms-3">
+        <h4 class="font-weight-bold ms-3"> For Consumer</h4>
+      <div class="d-flex flex-column font-weight-bold  ps-3">    
+        <p>Fans</p>
+         <p>lighting</p>
+          <p>switches</p>
+           <p>home appliances</p>
+           <p>kitchen appliances</p>
+           <p>personal grooming</p>
+      </div>
+     </div>
+      <div class="col-2  mt-4 ms-3">
+        <h4 class="font-weight-bold ms-3"> For Consumer</h4>
+      <div class="d-flex flex-column font-weight-bold  ps-3">    
+        <p>Fans</p>
+         <p>lighting</p>
+          <p>switches</p>
+           <p>home appliances</p>
+           <p>kitchen appliances</p>
+           <p>personal grooming</p>
+      </div>
+     </div>
+      <div class="col-2 mt-4 ms-3">
+        <h4 class="font-weight-bold ms-3"> For Consumer</h4>
+      <div class="d-flex flex-column font-weight-bold  ps-3">    
+        <p>Fans</p>
+         <p>lighting</p>
+          <p>switches</p>
+           <p>home appliances</p>
+           <p>kitchen appliances</p>
+           <p>personal grooming</p>
+      </div>
+     </div>
+      <div class="col-2 mt-4 ms-3">
+        <h4 class="font-weight-bold ms-3"> For Consumer</h4>
+      <div class="d-flex flex-column font-weight-bold  ps-3">    
+        <p>Fans</p>
+         <p>lighting</p>
+          <p>switches</p>
+           <p>home appliances</p>
+           <p>kitchen appliances</p>
+           <p>personal grooming</p>
+      </div>
+     </div>
+      
+     </div>
+     <footer class="bg-dark text-white mt-5"  style="cursor: pointer;">
+
+    <!-- Main Footer -->
+    <div class="container py-5" id="mainFooter" >
+        <div class="row" >
+
+            <div class="col-md-4 ">
+                <h4>Havells</h4>
+                <p>
+                    Leading electrical brand providing
+                    innovative products for modern homes.
+                </p>
+            </div>
+
+            <div class="col-md-4 d-flex flex-column">
+                <h4>Quick Links</h4>
+                  <a href="#" class="text-white text-decoration-none ">Home</a>
+                  
+                    <a href="#" class="text-white text-decoration-none">Products</a>
+                    
+                    <a href="#" class="text-white text-decoration-none">Services</a>
+              
+            </div>
+
+            <div class="col-md-4">
+                <h4>Contact</h4>
+                <p>support@havells.com</p>
+                <p>+91 9876543210</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="border-top border-secondary py-3" id="bottomFooter" style="cursor: pointer;">
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-4 text-center text-md-start">
+                    © 2025 Havells. All Rights Reserved.
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <a href="#" class="text-white text-decoration-none me-3">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="text-white text-decoration-none">
+                        Terms
+                    </a>
+                </div>
+
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="https://www.facebook.com/havells" class="text-white text-decoration-none me-3" target="_blank">
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/havells" class="text-white text-decoration-none me-3" target="_blank">
+                        Instagram
+                    </a>
+                    <a href="https://www.youtube.com/havells" class="text-white text-decoration-none me-3" target="_blank">
+                        YouTube
+                    </a>
+                    <a href="https://www.linkedin.com/company/havells" class="text-white text-decoration-none" target="_blank">
+                        LinkedIn
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+
+const tooltipList = [...tooltipTriggerList].map(
+  tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
+)
+</script>
+
+</body>
+</html>
